@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+/* font-family: 'Roboto', sans-serif;
+ */
+
+.App {
+  min-height: 150vh;
+  min-width: 100vw;
+}
+
+.header {
+  min-height: 120vh;
+  min-width: 100vw;
+}
+
+.topPart{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30vh;
+}
+.bottomPart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30vh;
+
+}
+.typedText{
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin-top: 8vh;
+  margin-left: 50px;
+  font-size: 34px;
+}
+.typedText.bottom {
+  margin-top: 15vh;
+}
+
+.footprints {
+  position: relative;
+  top: 30vh;
+  left: 0;
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75), 0px -10px 5px 0px rgba(0,0,0,0.75);
+  height: 35vh;
+}
+
+.main {
+  position: relative;
+  min-width: 100vw;
+  min-height: 50vh;
+  padding: 0 20px 100px 40px;
+  border-bottom: 2px solid black;
+  box-shadow: inset 0px -10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.intro, .middle, .end {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 25px 30px; 
+} 
+
+
+.firstString, .middleString, .endString{
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-right: 5px;
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.footer {
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.kindleImage {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url('./kindle-prostokat-1920.jpg');
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center center;
+  overflow-y: hidden;
+}
+.kindleImage.blur {
+  filter: blur(3px);
+}
+
+/* .kindle {
+  position: absolute;
+  opacity: 0.3;
+  top: 32vh;
+  left: 26vw;
+  height: 430px;
+  width: 350px;
+  cursor: pointer;
+  z-index: 2;
+  background-color: #fff;
+} */
+
+
+.kindleBig {
+  position: absolute;
+  top: 5vh;
+  left: 24vw;
+  min-width: 530px;
+  min-height: 691px;
+  background-image: url('./kindle-prostokad.png');
+  transform: scale(1);
+  opacity: 1;
+  z-index: 1;
+  transition: 0.2s;
+}
+.kindleBig.hide {
+  transform: scale(0.5);
+  opacity: 0;
+
+}
+
+.openMe {
+  background-color: rgba(50, 50, 50, 0.5);
+  display: inline;
+  color: white;
+  position: absolute;
+  bottom: 24vh;
+  left: 34vw;
+}
+
+.fa-power-off.On.hide {
+  opacity: 0;
+  z-index: -10;
+}
+
+.fa-power-off.On {
+  position: fixed;
+  bottom: 16vh;
+  right: 54vw;
+  font-size: 25px;
+  color: #111;
+  transition: 0.2s;
+  z-index: 10;
+  cursor: pointer;
+}
+.fa-power-off.On:hover {
+  color: white;
+}
+
+.fa-power-off.Off {
+  position: absolute;
+  bottom: 4vh;
+  right: 8vw;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.fa-power-off.Off:hover {
+  color: #222;
+}
+
+.turnMeOn.hide{
+  opacity: 0;
+}
+
+.turnMeOn {
+  opacity: 1;
+  position: fixed;
+  bottom: 54vh;
+  left: 36vw;
+  font-size: 24px;
+  color: black;
+  /* background-color: rgba(100, 100, 100, 0.3); */
+  transition: 0.2s;
+}
+
+.content {
+  text-align: center;
+  background-color: rgba(300, 300, 300, 0.75);
+  position: relative;
+  top: 11vh;
+  left: 64px;
+  width: 405px;
+  height: 506px;
+  overflow-y: scroll;
+}
+
+.contentPage{
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 10px 10px;
+}
+.contentPage.center {
+  text-align: center;
+}
+
+.floatedImg {
+  float: right;
+  width: 30%;
+  margin: 0 0 10px 10px;
+}
+
+.par {
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.menu {
+  margin-top: 50px;
+  list-style: none;
+}
+.menu a {
+  display: block;
+  color: black;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.menu a:hover {
+  text-decoration: underline;  
+  color: black;
+}
+.return a{
+  color: black;
+  
+}
+.return a:hover {
+  text-decoration: underline;  
+  color: black;
+}
+
+.pageNumber {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+
+
+
+/* PARALLAX */
+
+.parallax {
+  opacity: 0.3;
+  height: 12vh;
+  z-index: -5;
+  position: absolute;
+}
+
+.parallax:nth-of-type(1){
+  top: -300px;
+  right: 10vw;
+}
+.parallax:nth-of-type(2){
+  left:  0;
+  bottom: 60vh;
+}
+
+@media only screen and (min-width : 1370px) {
+
+  .footprints {
+    top: 25vh;
+    left: 0;
+    height: 40vh;
+  }
+
+  .kindle {
+    top: 33vh;
+    left: 31vw;
+    width: 370px;
+    height: 490px;
+
+  }
+ 
+  .kindleBig {
+    top: 15vh;
+    left: 30vw;
+    transform: scale(1.1);
+  }
+
+  .content {
+    top: 9vh;
+  }
+  
+}
