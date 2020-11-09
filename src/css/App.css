@@ -3,7 +3,7 @@
  */
 
 .App {
-  min-height: 150vh;
+  min-height: 100vh;
   min-width: 100vw;
 }
 
@@ -27,12 +27,12 @@
 }
 .typedText{
   font-family: 'Roboto', sans-serif;
-  display: block;
+  display: inline-block;
   margin-top: 8vh;
   margin-left: 50px;
   font-size: 34px;
 }
-.typedText.bottom {
+.typedText.bottom, {
   margin-top: 15vh;
 }
 
@@ -266,6 +266,10 @@
     top: 25vh;
     left: 0;
     height: 40vh;
+  }
+
+  .photo {
+    width: 100%;
   }
 
   .kindle {
