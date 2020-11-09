@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 
 import triquetra from '../../../css/triquetra.png';
+import portret from '../../../css/mojezdjecie.jpg'
 
 const Bio = () => {
     return (
@@ -15,6 +16,7 @@ const Bio = () => {
                 <p className="par">Wyjazd za granicę i życie za nią przez cztery lata nauczyło mnie pokory oraz solidnie przygotowało grunt pod późniejsze zmiany zarówno charakteru jak i poglądowe. Celtycka triquetra w jednym ze swych znaczeń symbolizuje to, iż wszystko co robimy w życiu powraca do nas później trzykrotnie silniej. Dojrzałem do tego poglądu. </p>
             </div>
             <p className="par">Obecnie od blisko półtora roku zajmuje się projektowaniem i programowaniem stron, i wszystkiego innego, co można znaleźć w internecie. Naukę i kursy rozpocząłem jeszcze w Niderlandach, na ten moment jednak wróciłem z powrotem do kraju, postanawiając iż zarówno on jak i ja zasługujemy na jeszcze jedną próbę.</p>
+            <img src={portret} alt="portret własciciela" className="photo" />
 
         </div>
     );
