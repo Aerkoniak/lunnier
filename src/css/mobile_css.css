@@ -1,21 +1,77 @@
-
-
 .header.mobile {
+    margin: 0;
     width: 100%;
     min-height: 100vh;
     position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
 }
 
-.broken {
-    width: 100%;
-    opacity: 0.7;
+.header.mobile.broken {
+    background-image: url('./crack.png');
+    background-size: cover;    
 }
+
 .header.mobile p {
-  position: absolute;
-  left: 30vw;
-  bottom: 10vh;
+ text-align: center;
+ padding-top: 70vh;
+ font-size: 22px;
 }
 
+.typedText.mobileBreak {
+    margin: 0;
+    position: relative;
+    left: 50vw;
+    top: 70vh;
+    transform: translate(-50%,-50%);
+
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.typedText.secondStart {
+    margin: 10vh 25px 0;
+    background-color: rgba(255, 255, 255, .6);
+
+    font-size: 22px;
+}
+
+.typedText.secondString {
+    margin: 0;
+    margin: 15vh 20px 0;
+    background-color: rgba(255, 255, 255, .6);
+
+    font-size: 22px;
+}
+
+.secondHeader {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    transform: translateY(100%);
+    background-image: url('./brickwall.png');
+    z-index: 2;
+}
+/* .secondHeader.hide {
+    transform: translateY(100%);
+} */
+@keyframes slide-up {
+    from {
+    transform: translateY(100%);
+    }
+    to {
+    transform: translateY(0);
+    }
+}
+.secondHeader.shown {
+    background-color: white;
+    animation: slide-up 0.5s ease 2.5s both;
+}
 
 @media only screen and (max-width : 1024px) {
  .desktop {
