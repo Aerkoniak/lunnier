@@ -17,6 +17,7 @@ const Bio = () => {
             </div>
             <p className="par">Obecnie od blisko półtora roku zajmuje się projektowaniem i programowaniem stron, i wszystkiego innego, co można znaleźć w internecie. Naukę i kursy rozpocząłem jeszcze w Niderlandach, na ten moment jednak wróciłem z powrotem do kraju, postanawiając iż zarówno on jak i ja zasługujemy na jeszcze jedną próbę.</p>
             <img src={portret} alt="portret własciciela" className="photo" />
+            <p className="return"><Link to="/">wróć do spisu treści</Link></p>
 
         </div>
     );
