@@ -12,6 +12,11 @@ import Footer from './components/Desktop/Footer/Footer';
 import Main from './components/Desktop/Main/Main';
 import Header from './components/Desktop/Header/Header';
 import MobileHeader from './components/Mobile/MobileHeader';
+import MobileMain from './components/Mobile/MobileMain';
+import NavMobile from './components/Mobile/NavMobile';
+import ParallaxMobile from './components/Parallax/ParallaxMobile';
+import ContactForm from './components/Contact/ContactForm';
+import MobileFooter from './components/Mobile/MobileFooter';
 
 AOS.init({ once: true });
 
@@ -27,13 +32,17 @@ function App() {
     <BrowserRouter>
       <Switch>
         <div className="App" id="App">
-          <div className="desktop">
+          <div className="desktopWrap">
             <Header />
             <Main />
             <Footer />
           </div>
-          <div className="mobile">
+          <div className="mobileWrap">
             <MobileHeader />
+            <NavMobile />
+            <MobileMain />
+            <ContactForm />
+            <MobileFooter />
           </div>
 
         </div>
