@@ -6,7 +6,8 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    z-index: 1;
+    z-index: 3;
+    background-color: #fff;
 }
 
 .header.mobile.broken {
@@ -18,6 +19,10 @@
  text-align: center;
  padding-top: 70vh;
  font-size: 22px;
+}
+.typedText {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 .typedText.mobileBreak {
@@ -32,15 +37,26 @@
 }
 
 .typedText.secondStart {
+    display: block;
+
     margin: 10vh 25px 0;
     background-color: rgba(255, 255, 255, .6);
 
     font-size: 22px;
 }
 
-.typedText.secondString {
+.typedText.secondStartString {
     margin: 0;
-    margin: 15vh 20px 0;
+    margin: 10vh 20px 0;
+    display: block;
+    background-color: rgba(255, 255, 255, .6);
+
+    font-size: 22px;
+}
+.typedText.thirdStartString {
+    margin: 0;
+    margin: 10vh 20px 0;
+    display: block;
     background-color: rgba(255, 255, 255, .6);
 
     font-size: 22px;
@@ -55,11 +71,9 @@
     transition: 0.3s;
     transform: translateY(100%);
     background-image: url('./brickwall.png');
-    z-index: 2;
+    z-index: 4;
 }
-/* .secondHeader.hide {
-    transform: translateY(100%);
-} */
+
 @keyframes slide-up {
     from {
     transform: translateY(100%);
@@ -70,11 +84,132 @@
 }
 .secondHeader.shown {
     background-color: white;
-    animation: slide-up 0.5s ease 2.5s both;
+    animation: slide-up 0.5s ease 2s both;
+}
+.mainMobile {
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
-@media only screen and (max-width : 1024px) {
- .desktop {
+.chapter {
+    min-height: 100vh;
+    text-align: justify;
+}
+
+.title {
+    background-color: rgba(255, 255, 255, .5);
+    padding: 15px 15px 20px;
+}
+
+.chapter.row p {
+    background-color: rgba(255, 255, 255, .5);
+    z-index: 1;
+    font-size: 18px;
+}
+
+.navigation {
+    list-style: none;
+    position: fixed;
+    right: 0;
+    bottom: 15vh;
+    transform: translateX(110%);
+    transition: 0.3s;
+    z-index: 2;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    background-color: rgb(75, 75, 75);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: 2px solid black;
+    border-right: none;
+    padding-right: 10px;
+}
+.navigation.shown {
+    transform: translateX(0);
+}
+.fa-hamburger {
+    position: fixed;
+    right: 5vh;
+    bottom: 5vh;
+    font-size: 40px;
+    z-index: 2;
+}
+
+.navigation li {
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+.navigation li:nth-of-type(1){
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.navigation li:nth-of-type(4){
+    margin-bottom:10px;
+}
+
+.navigation a {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.parallaxWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.parallaxMob {
+    position: absolute;
+    opacity: 0.3;
+}
+.parallaxMob.triq {
+    top: 0;
+    right: 10vw;
+}
+.parallaxMob.utilities {
+    top: 30%;
+    left: -20%;
+}
+.parallaxMob.phone {
+    top: 50%;
+    left: -20%;
+}
+.parallaxMob.mail {
+    top: 80%;
+    left: 60%;
+}
+
+.contact {
+    text-align: center;
+    }
+    .contact a{
+      text-align: center;
+      display: block;
+      margin: 15px 0;
+    }
+    .fa-copy {
+      cursor: pointer;
+    }
+
+.footer {
+    background-color: #000;
+    width: 100%;
+    height: 5vh;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+}
+.footer p {
+    margin: auto auto;
+}
+
+@media only screen and (max-width : 1023px) {
+ .desktopWrap {
      display: none;
  }
 }
