@@ -22,12 +22,6 @@ AOS.init({ once: true });
 
 function App() {
 
-
-  // useEffect(() => {
-  //   const app = document.getElementById('#App');
-  //   console.log(app)
-  // }, [])
-
   return (
     <BrowserRouter>
       <Switch>

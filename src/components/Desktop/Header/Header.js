@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import footprints from '../../../css/snow-long.png';
-import TypedComponent from '../Typed/TypedComponent';
+import TypedComponent from '../../Typed/TypedComponent';
 
 
 const Header = () => {
