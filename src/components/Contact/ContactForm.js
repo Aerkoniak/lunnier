@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const ContactForm = () => {
 
 
+    const email = "lunnier@gmail.com"
+    const tel = "+48739970530"
 
-    const [email, setEmail] = useState('lunnier@gmail.com');
-    const [tel, setTel] = useState("+48739970530");
     const [copiedMail, setMailCopy] = useState(false);
     const [copiedTel, setTelCopy] = useState(false);
 

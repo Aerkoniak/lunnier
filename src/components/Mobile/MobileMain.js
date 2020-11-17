@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import ParallaxMobile from '../Parallax/ParallaxMobile';
-import ContactForm from '../Contact/ContactForm';
 
 const MobileMain = () => {
 

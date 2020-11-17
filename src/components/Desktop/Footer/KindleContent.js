@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Switch, Route, Link } from 'react-router-dom'
+import React from 'react';
+import { Switch, Route } from 'react-router-dom'
 
 import Menu from '../KindlePages/Menu'
 import Bio from '../KindlePages/Bio';

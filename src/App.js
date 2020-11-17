@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import AOS from 'aos';
 import './css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,7 +14,6 @@ import Header from './components/Desktop/Header/Header';
 import MobileHeader from './components/Mobile/MobileHeader';
 import MobileMain from './components/Mobile/MobileMain';
 import NavMobile from './components/Mobile/NavMobile';
-import ParallaxMobile from './components/Parallax/ParallaxMobile';
 import ContactForm from './components/Contact/ContactForm';
 import MobileFooter from './components/Mobile/MobileFooter';
 

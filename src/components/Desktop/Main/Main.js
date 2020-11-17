@@ -4,9 +4,9 @@ import ParallaxDesktop from '../../Parallax/ParallaxDesktop';
 
 const Main = () => {
 
-    const [firstString, setString] = useState("Cześć! Nazywam się Michał Szczepański i – jak można się z łatwością zorientować – zajmuję się tworzeniem stron internetowych. Zresztą, nie tylko tym. Jestem programistą JavaScript, mogę więc stworzyć również aplikację internetową, typu Kalkulator Budżetu, oraz sklep internetowy dla praktycznie każdej działalności, którą można prowadzić w sieci.");
-    const [secondString, setSecString] = useState("W swojej pracy skupiam się na technologii, wychodząc z założenia, że nasze strony są tak dobre, jak dobrze orientujemy się w narzędziach, z których możemy korzystać. Wszystkie moje projekty powstają w zgodzie z obecnymi trendami oraz zasadami bezpieczeństwa.")
-    const [thirdString, setThirdString] = useState("Śmiało można o mnie powiedzieć, że jestem zapalonym programistą, jednocześnie jednak trudno określić mnie jako urodzonego sprzedawcę. Skoro zatem nie sprzedam swojej oferty, to pozostaje mi liczyć, że lubisz czytać tak bardzo, jak ja i zaprosić Cię niżej – do czytnika – gdzie będziesz mógł zapoznać się ze wszystkimi informacjami, zarówno dotyczącymi mnie, jak i moich umiejętności oraz dostępnej oferty.")
+    const firstString = "Cześć! Nazywam się Michał Szczepański i – jak można się z łatwością zorientować – zajmuję się tworzeniem stron internetowych. Zresztą, nie tylko tym. Jestem programistą JavaScript, mogę więc stworzyć również aplikację internetową, typu Kalkulator Budżetu, oraz sklep internetowy dla praktycznie każdej działalności, którą można prowadzić w sieci.";
+    const secondString = "W swojej pracy skupiam się na technologii, wychodząc z założenia, że nasze strony są tak dobre, jak dobrze orientujemy się w narzędziach, z których możemy korzystać. Wszystkie moje projekty powstają w zgodzie z obecnymi trendami oraz zasadami bezpieczeństwa."
+    const thirdString = "Śmiało można o mnie powiedzieć, że jestem zapalonym programistą, jednocześnie jednak trudno określić mnie jako urodzonego sprzedawcę. Skoro zatem nie sprzedam swojej oferty, to pozostaje mi liczyć, że lubisz czytać tak bardzo, jak ja i zaprosić Cię niżej – do czytnika – gdzie będziesz mógł zapoznać się ze wszystkimi informacjami, zarówno dotyczącymi mnie, jak i moich umiejętności oraz dostępnej oferty."
 
     const [firstArray, setFirstArray] = useState([]);
     const [secondArray, setSecondArray] = useState([]);

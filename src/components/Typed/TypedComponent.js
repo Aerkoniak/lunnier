@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Typed from 'typed.js';
 
 const TypedComponent = ({ text, id, delay }) => {
@@ -15,8 +15,8 @@ const TypedComponent = ({ text, id, delay }) => {
             options.startDelay = delay;
         }
 
-        const typed = new Typed(`#${id}`, options);
-    }, [])
+        new Typed(`#${id}`, options);
+    }, [text, delay, id])
 
     return (
         <span className={`typedText ${id}`} id={`${id}`}></span>
